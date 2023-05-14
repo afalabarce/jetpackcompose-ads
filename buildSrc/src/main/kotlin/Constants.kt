@@ -1,6 +1,6 @@
 object Constants {
-    const val versionCode = 153
-    const val versionName = "1.5.3"
+    const val versionCode = 154
+    const val versionName = "1.5.4"
     const val composeVersion = "1.5.0-alpha04"
     const val composeCompilerVersion = "1.4.4"
     const val androidxCoreKtxVersion = "1.10.1"
