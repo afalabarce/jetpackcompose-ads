@@ -14,3 +14,7 @@
 .cxx
 local.properties
 /.idea/
+/buildSrc/build/classes/kotlin/main/SonatypePublishingAdmob.class
+/buildSrc/build/classes/kotlin/main/SonatypePublishingAppLovin.class
+/buildSrc/build/classes/kotlin/main/SonatypePublishingCommon.class
+/buildSrc/build/classes/kotlin/main/SonatypePublishingWortise.class
