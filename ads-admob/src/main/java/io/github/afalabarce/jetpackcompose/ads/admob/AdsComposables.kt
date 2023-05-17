@@ -74,7 +74,7 @@ fun AdmobInterstitialAdvertView(adUnitId: String, onInterstitial: (Boolean) -> U
 }
 
 @Composable
-fun AdmobRewardInterstitialAdvertView(adUnitId: String, onRewardShown: () -> Unit, onReward: (Boolean) -> Unit = {}){
+fun AdmobRewardInterstitialAdvertView(adUnitId: String, rewardLabel: String, rewardAmount: Int = 1, onRewardShown: () -> Unit, onReward: (Boolean) -> Unit = {}){
     val context = LocalContext.current
 
     LaunchedEffect(key1 = "Reward Word"){
@@ -107,7 +107,7 @@ fun AdmobRewardInterstitialAdvertView(adUnitId: String, onRewardShown: () -> Uni
                     }
 
                     rewardAd.show(context as Activity){ rewardItem ->
-                        if (rewardItem.type == "HangmanReward" && rewardItem.amount == 1){
+                        if (rewardItem.type == rewardLabel && rewardItem.amount == rewardAmount){
                             onReward(true)
                         }else
                             onReward(false)

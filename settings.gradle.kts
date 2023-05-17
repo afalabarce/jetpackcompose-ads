@@ -1,3 +1,8 @@
+import java.net.URI
+
+include(":ads-applovin")
+
+
 pluginManagement {
     repositories {
         google()
@@ -10,8 +15,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = URI("https://maven.wortise.com/artifactory/public") }
     }
 }
 
 rootProject.name = "JetpackComposeComponentsAdsAdmob"
 include(":ads-admob")
+include(":ads-wortise")

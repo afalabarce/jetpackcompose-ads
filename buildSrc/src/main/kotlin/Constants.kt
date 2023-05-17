@@ -1,6 +1,8 @@
 object Constants {
-    const val versionCode = 155
-    const val versionName = "1.5.5"
+    const val versionCode = 158
+    const val versionName = "1.5.8"
+    const val minSdk = 23
+    const val targetAndCompilingSdk = 33
     const val composeVersion = "1.5.0-alpha04"
     const val composeCompilerVersion = "1.4.4"
     const val androidxCoreKtxVersion = "1.10.1"
@@ -16,19 +18,34 @@ object Constants {
     const val constraintLayoutComposeVersion = "1.0.1"
 }
 
-object SonatypePublishing {
+object SonatypePublishingCommon {
     const val publishedGroupId = "io.github.afalabarce"
-    const val libraryName = "jetpackcompose-admob"
-    const val artifact = "jetpackcompose-admob"
-    const val libraryDescription = "Another Project for Jetpack Compose Composable Library (for admob publishers)"
-    const val siteUrl = "https://github.com/afalabarce/jetpackcompose-admob"
-    const val gitUrl = "https://github.com/afalabarce/jetpackcompose-admob.git"
     const val libraryVersionId = Constants.versionCode
     const val libraryVersionCode = Constants.versionName
+    const val gitPath = "github.com/afalabarce/jetpackcompose-admob.git"
+    const val gitUrl = "https://$gitPath"
     const val developerId = "afalabarce"
     const val developerName = "Antonio Fdez. Alabarce"
     const val developerEmail = "afalabarce@gmail.com"
     const val licenseName = "The Apache Software License, Version 2.0"
     const val licenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
     val allLicenses = arrayOf ("Apache-2.0")
+}
+object SonatypePublishingAdmob {
+
+    const val libraryName = "jetpackcompose-admob"
+    const val artifact = "jetpackcompose-admob"
+    const val libraryDescription = "Another Project for Jetpack Compose Composable Library (for admob publishers)"
+}
+
+object SonatypePublishingWortise {
+    const val libraryName = "jetpackcompose-wortise"
+    const val artifact = "jetpackcompose-wortise"
+    const val libraryDescription = "Another Project for Jetpack Compose Composable Library (for wortise publishers)"
+}
+
+object SonatypePublishingAppLovin {
+    const val libraryName = "jetpackcompose-applovin"
+    const val artifact = "jetpackcompose-applovin"
+    const val libraryDescription = "Another Project for Jetpack Compose Composable Library (for applovin publishers)"
 }

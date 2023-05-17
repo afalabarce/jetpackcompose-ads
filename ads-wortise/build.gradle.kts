@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.afalabarce.jetpackcompose.ads.admob"
+    namespace = "io.github.afalabarce.jetpackcompose.ads.wortise"
     compileSdk = Constants.targetAndCompilingSdk
 
     defaultConfig {
@@ -58,12 +58,8 @@ dependencies {
     implementation ("androidx.compose.material3:material3:${Constants.composeMaterial3Version}")
 
     // ads dependencies
-    implementation (platform("com.google.firebase:firebase-bom:${Constants.firebaseBomVersion}"))
-    implementation ("com.google.firebase:firebase-appcheck-playintegrity")
-    implementation ("com.google.firebase:firebase-appcheck-debug:${Constants.firebaseAppCheckDebugVersion}")
-    implementation ("com.google.firebase:firebase-messaging:${Constants.firebaseMessagingVersion}")
-    implementation ("com.google.android.gms:play-services-ads:${Constants.gmsPlayServicesAdsVersion}")
-    implementation ("com.google.android.gms:play-services-ads-identifier:${Constants.gmsPlayServicesAdsVersionIdentifierVersion}")
+    implementation ("com.wortise:android-sdk:1.4.0")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -117,11 +113,11 @@ publishing {
     publications {
         create<MavenPublication>("Maven"){
             groupId = SonatypePublishingCommon.publishedGroupId
-            artifactId = SonatypePublishingAdmob.artifact
+            artifactId = SonatypePublishingWortise.artifact
             version = SonatypePublishingCommon.libraryVersionCode
 
             println ("groupId: ${SonatypePublishingCommon.publishedGroupId}")
-            println ("Artifact: ${SonatypePublishingAdmob.artifact}")
+            println ("Artifact: ${SonatypePublishingWortise.artifact}")
             println ("Version: ${SonatypePublishingCommon.libraryVersionCode}")
         }
         withType<MavenPublication>{
@@ -133,8 +129,8 @@ publishing {
 
             pom {
                 packaging = "aar"
-                name.set(SonatypePublishingAdmob.artifact)
-                description.set(SonatypePublishingAdmob.libraryDescription)
+                name.set(SonatypePublishingWortise.artifact)
+                description.set(SonatypePublishingWortise.libraryDescription)
                 url.set(SonatypePublishingCommon.gitUrl)
                 licenses {
                     license {
@@ -189,7 +185,7 @@ publishing {
             // to the release repo directly
 
             setUrl(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
-            
+
             // The username and password we've fetched earlier
             credentials {
                 username = signingData["ossrhUsername"]
