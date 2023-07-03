@@ -1,7 +1,7 @@
 object Constants {
-    const val versionCode = 158
-    const val versionName = "1.5.8"
-    const val minSdk = 23
+    const val versionCode = 174
+    const val versionName = "1.7.4"
+    const val minSdk = 24
     const val targetAndCompilingSdk = 33
     const val composeVersion = "1.5.0-alpha04"
     const val composeCompilerVersion = "1.4.4"

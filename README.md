@@ -58,7 +58,9 @@ MobileAds.initialize(this) {}
 Como nota final, si deseas incluir este proyecto en tus apps, en tu build.gradle sólo deberás agregar lo siguiente:
 
 ```
-implementation 'io.github.afalabarce:jetpackcompose-admob:1.5.3'
+implementation 'io.github.afalabarce:jetpackcompose-admob:1.7.4'
+implementation 'io.github.afalabarce:jetpackcompose-wortise:1.7.4'
+implementation 'io.github.afalabarce:jetpackcompose-applovin:1.7.4'
 ```
 
 Si crees que estoy haciendo un buen trabajo y me merezco un café, puedes invitarme haciéndome un [PayPalMe!](https://www.paypal.com/paypalme/afalabarce)
