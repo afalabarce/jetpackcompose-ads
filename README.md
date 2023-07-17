@@ -63,6 +63,6 @@ implementation 'io.github.afalabarce:jetpackcompose-wortise:1.7.4'
 implementation 'io.github.afalabarce:jetpackcompose-applovin:1.7.4'
 ```
 
-Si crees que estoy haciendo un buen trabajo y me merezco un café, puedes invitarme haciéndome un [PayPalMe!](https://www.paypal.com/paypalme/afalabarce)
+Si crees que estoy haciendo un buen trabajo y me merezco un café, puedes invitarme haciéndome un [PayPalMe!](https://www.paypal.com/paypalme/afalabarce) o [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R4NB8VV)
 
 
